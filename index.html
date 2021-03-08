@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="speedControls">
+            <input onchange="updateTiming()" type="range" units="bpm" id="timing" min="60" max="240" value="120">
+            <label id="bpm">120 bpm</label>
+        </div>
+        <div class="controlButtons">
+            <button id="play" onclick="play()">PLAY</button>
+            <button id="pause" onclick="stop()">PAUSE</button>
+        </div>
+            
+    
+        
+        <table>
+            
+            <tr id="a"><td class="noteName">A</td></tr>
+            <tr id="b"><td class="noteName">B</td></tr>
+            <tr id="c"><td class="noteName">C</td></tr>
+            <tr id="d"><td class="noteName">D</td></tr>
+            <tr id="e"><td class="noteName">E</td></tr>
+            <tr id="f"><td class="noteName">F</td></tr>
+            <tr id="g"><td class="noteName">G</td></tr>
+        </table>
+    </div>
+    
+</body>
+<script src="https://unpkg.com/tone"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+
+</html>

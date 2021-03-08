@@ -1,0 +1,90 @@
+body{
+    overflow-x: scroll;
+    background: #E3DFD7;
+}
+button{
+    position: absolute;
+    background: #EF6555;
+    border-style: none;
+    width: 100px;
+    height: 40px;
+    top: 100px;
+    border-radius: 5px;
+    color: #E3DFD7;
+    box-shadow: 5px 5px 2px #c5766c;
+    font-weight: bolder;
+    font-size: large;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    width: 120px;
+    height: 50px;
+    font-size: larger;
+    box-shadow: 5px 5px 2px #eb1e03;
+}
+
+table{
+    position: absolute;
+    overflow-x:scroll;
+    top:100px;
+}
+td{
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    background: #C29D4E;
+    color:#C29D4E;
+    transition: .1s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+td:hover{
+    background: #c59732;
+}
+td:active{
+    background: #253E66;
+    color:#253E66;
+}
+
+
+.main{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.noteName{
+    background: #E3DFD7;
+    color: #253E66;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: default;
+}
+.noteName:hover{
+    background: #E3DFD7;
+}
+.noteName:active{
+    background: #E3DFD7;
+    color: #253E66;
+}
+
+
+.speedControls{
+    position: fixed;
+    left: calc(50vw - 250px);
+}
+.controlButtons{
+    position: fixed;
+    top:0px;
+}
+#timing{
+    width:500px;
+    
+}
+#play{
+    left: calc(50vw + 350px);
+}
+#pause{
+    left: calc(50vw - 500px);
+}
